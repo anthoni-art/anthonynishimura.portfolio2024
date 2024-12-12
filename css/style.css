@@ -22,13 +22,13 @@ Global Styles and UI Components
   background: linear-gradient(to top, #45f3b6, #4d809f);
 
   /* Optional: Move the navbar is positioned over the hero */
-  position: absolute;
 
   /* Optional: Stretch the navbar across the full width */
   width: 100%;
 
   /* Optional: Add inner spacing to the navbar */
-  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 body {
@@ -38,6 +38,11 @@ body {
 
 .card {
   background: linear-gradient(to top, #3b7271, black);
+  border: none;
+  max-width: 500px;
+  min-height: 575px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -47,6 +52,8 @@ footer {
   color: var(--bs-white);
   /* Optional: Center footer elements */
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer .footer-social {
@@ -61,6 +68,8 @@ footer .footer-social {
   color: black;
   /* Optional: Remove primary button outline */
   border: none;
+  min-width: 100%;
+  max-width: 29.1rem;
 }
 
 .btn-primary:hover {
@@ -154,6 +163,7 @@ p {
     font-size: 4.2rem;
   }
 }
+
 /********************************
 Page-Specific
 **********************************/
@@ -181,7 +191,10 @@ Page-Specific
   align-items: center;
   justify-content: center;
 }
-
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 #about-me {
   /* Optional: Add a background image for the hero section */
   background: url(../images/bg-1.png);
